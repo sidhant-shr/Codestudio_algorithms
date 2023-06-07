@@ -14,7 +14,8 @@
 
 while(s<=e){
     if(arr[mid]==key){
-        ans = mid;
+        ans = mid;   // first occurence will lie in the left most part so
+                       // store the answer and shift e to mid-1, vice versa for last occurence!!
         e = mid-1;
     }
 
